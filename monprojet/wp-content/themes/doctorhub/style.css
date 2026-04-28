@@ -1,0 +1,160 @@
+/*
+Theme Name: DoctorHub
+Theme URI: https://www.nayrathemes.com/doctorhub-free/
+Author: Nayra Themes
+Author URI: https://www.nayrathemes.com/
+Description: DoctorHub health & medical WordPress theme. It has come with predefined Sections, Which helps you to build your own professional medical website. DoctorHub based on in-depth research into hospital, clinic, dentist, dermatology, dental, cosmetology, plastic surgery, laser surgery, dietitian, chiropractic, rehab, pharmacy, veterinary or any medical business. View the demo of DoctorHub Pro https://www.nayrathemes.com/demo/pro/?theme=doctorhub
+Version: 1.4
+Template: medazin
+Tested up to: 6.5
+Requires PHP: 5.6
+Requires at least:  4.7
+License: GPLv3 or later
+License URI:  https://www.gnu.org/licenses/gpl-3.0.html
+slug: doctorhub
+Text Domain: doctorhub
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, blog, e-commerce, portfolio, editor-style, grid-layout
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+/* Header */
+@media (min-width: 992px) {
+	header.header-2 {
+		position: absolute;
+		top: 45px;
+		z-index: 9;
+		width: 100%;
+	}
+}
+
+.header.header-2 .shape-main .menu-bg-elements-left {
+	position: absolute;
+    left: -100%;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.header.header-2 .shape-main .menu-bg-elements-right  {
+	position: absolute;
+    left: 100%;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.header.header-2 .shape-main .menu-bg-elements-left .element1 {
+	position: absolute;
+    left: -100%;
+    top: 5px;
+    animation: pulserun1 5s linear infinite;
+}
+.header.header-2 .shape-main::before {
+    content: '';
+    position: absolute;
+    background: rgba(0 0 0 / 30%);
+    left: -100%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.header.header-2 .shape-main::after {
+    content: '';
+    position: absolute;
+    background: rgba(0 0 0 / 30%);
+    right: -100%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.header.header-2 .shape-main .menu-bg-elements-right .element2 {
+	position: absolute;
+    right: -100%;
+    top: 5px;
+    animation: pulserun2 5s linear infinite;
+}
+
+@keyframes pulserun1{ from {left: 73px;}  to {left: 151px;} } 
+@keyframes pulserun2{ from {right: 151px;}  to {right: 73px;} }
+
+/* Slider */
+
+.item .cover .slider-content h2 {
+	-webkit-text-stroke: 1px;
+	font-weight: 400;
+}
+
+@media (min-width: 992px){
+	.item .cover .slider-content h2 {
+		   font-size: 56px;
+	}
+	.item .cover .slider-content {
+		   margin-top: 150px;
+	}
+	.item img {
+		min-height: 700px;
+	}
+}
+
+.item .cover .slider-content h2 {
+    -webkit-text-fill-color:  var(--text-white);
+    color:  var(--text-white);
+}
+
+.item .cover .slider-content h2 {
+    color: var(--primary-color);
+    -webkit-text-fill-color: var(--primary-color);
+}
+
+.item .cover .slider-content h2>.slider-sub-title {
+    color:  var(--text-white);
+    -webkit-text-fill-color:  var(--text-white);
+}
+
+.header-2 .main-menu li a.active , .header-2 .main-menu>.menu-item a:hover{
+    color: var(--primary-color) !important;
+}
+
+.header-2 .navigation-wrapper .navbar-area {
+    justify-content: end;
+}
+
+h4.site-title {
+    margin-bottom: 0;
+}
+
+.header a.site-title, .header a.custom-logo-link  {
+	display: block;
+	line-height: 1;
+}
+
+.header p.site-description {
+	line-height: 1;
+	margin: 0.9523vw 0 0;
+}
+
+@media (min-width: 992px) {
+	ul.main-menu >li:first-child > a {
+		color: #ffffff;
+	}
+}
+
+/* Info Section */
+section.info-section button#toggle-btn, section.info-section .item {
+	background: var(--secondary-color);
+}
+
+section.info-section .toggle-btn i {
+	color: var(--primary-color);
+	border-color: var(--primary-color);
+}
+
+/* Features */
+.feature-section .bg-elements img[class*="element"], .footer-logo img {
+	width: auto;
+}
